@@ -1,11 +1,10 @@
 const minaLink = document.getElementById('mina');
 const nakyma = document.getElementById('nakyma');
-const minaNakymaDiv = document.getElementById('minaNakymaDiv');
+
 
 minaLink.addEventListener('click', minaNakyma);
 
 function minaNakyma() {
-    minaNakymaDiv.style.display = 'block';
     console.log('Minä clicked!');
 }
 
