@@ -15,15 +15,21 @@ function muotoilePaivamaara() {
 
 document.addEventListener("DOMContentLoaded", () => {
     const image = document.getElementById('omakuva');
-    const text = document.getElementById('tekstit');
+    const texts = document.querySelectorAll('.tekstit');
 
-    if (image && text) {
+    if (image) {
         setTimeout(() => {
             image.classList.add('visible');
-            text.classList.add('visible');
         }, 100);
     }
+
+    if (texts.length > 0) {
+        setTimeout(() => {
+            texts.forEach(text => text.classList.add('visible'));
+        }, 200);
+    }
 });
+
 
 
 
