@@ -33,6 +33,39 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+const projectLinks = [
+    'https://mpyykko.github.io/JS/hedelma.html',
+    'https://mpyykko.github.io/JS/sikanoppa.html',
+    'https://mpyykko.github.io/JS/clicker.html',
+   
+  ];
+
+
+let currentProjectIndex = 0;
+let iframe = document.querySelector('.embed-responsive-item');
+
+ 
+function showNext() {
+  
+   
+    currentProjectIndex = (currentProjectIndex + 1) % projectLinks.length;
+    let nextSrc = projectLinks[currentProjectIndex];
+    iframe.setAttribute('src', nextSrc);
+  }
+
+function showPrevious() {
+   
+    let iframe = document.querySelector('.embed-responsive-item');
+
+  
+    currentProjectIndex = (currentProjectIndex - 1 + projectLinks.length) % projectLinks.length;
+    let previousSrc = projectLinks[currentProjectIndex];
+    iframe.setAttribute('src', previousSrc);
+}
+
+
+
+
 
 
 muotoilePaivamaara();
