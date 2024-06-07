@@ -1,0 +1,494 @@
+
+
+body{
+    justify-content:center;
+    align-items: center;
+    
+}
+
+
+  
+    .pelikone-container {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        border: 5px solid rgba(0, 0, 0, 0.55);
+      
+        background-image: url(pelikuvat/uusilippu.png);
+        background-size: 100% 100%;
+        background-position: center;
+    
+       
+    }
+    .pelikehys{
+        position:relative;
+        width: 100%;
+        height: 100%;
+       
+    }
+
+    .peliohjeet{
+        position:absolute;
+        width: 70%;
+        height: auto;
+        max-height: 100%;
+        box-sizing: border-box;
+        margin: 0 auto;
+        border-radius: 2px;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.732);
+        backdrop-filter: blur(4px);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 997;
+        top: 0;
+        overflow-y: auto;
+        text-align: center;
+       
+    }
+
+    #peliohjeet::-webkit-scrollbar {
+        display: none; 
+    }
+
+    .kuvasailio{
+        display: flex;
+        flex-direction:column;
+        max-height: 100%;
+    }
+
+    .kuvat{
+        margin: 0 auto;
+        width: 50%;
+        margin-bottom: 20px;
+        margin-top: 40px;
+      
+    }
+
+    .back{
+        width: 10%;
+        margin: 50px auto;
+    }
+
+    .ohjeet{
+        position: absolute;
+        width: 30px;
+        height: 50px;
+        left: 15px;
+        top: 5px;
+        background-image: url(pelikuvat/dollar.png);
+        background-size: 100% 100%;
+
+    }
+
+  
+    .musakuva{
+        width: 40%;
+      
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    .peli-otsikko{
+        position: absolute;
+        margin: 0 auto;
+        position:relative;
+        width: 50%;
+        top: 0;
+        display: flex;
+        justify-content: center;
+      
+    }
+   
+  
+    .rulla-container {
+        position: relative;
+        display: flex;
+        gap: 15px;
+        justify-content: space-between;
+        width: 50%;
+        height: 20%;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        top: 40%;
+        
+    
+    }
+
+    .rulla{
+        position: relative;
+        background-image: url(pelikuvat/rullakehys2.png);
+        background-size: 100% 100%;
+        height: 60%;
+        border-left: 4px solid rgb(207, 207, 207);
+        border-top-left-radius: 4px;
+        border-right:4px solid rgb(0, 21, 0);
+        border-top-right-radius: 4px;
+        border-top:5px solid rgba(1, 53, 1, 0.461);
+        border: none;
+        top: 0;
+        overflow: hidden;
+        flex: 1;
+        box-shadow: inset 0px 10px 10px -5px rgba(0, 0, 0, 0.4);
+        display: flex;
+        justify-content: center;
+       
+
+       
+    }
+
+
+    
+    .rulla-symboli {
+    
+        width: 70%;
+        height: 50%;
+        position:relative;
+        margin: 0px auto;
+        top: 10px;
+        animation: liukuuAlas 300ms ease-in forwards;
+        
+     
+    }
+
+    @keyframes liukuuAlas {
+        0% {
+            transform: translateY(-60px);
+        }
+       
+        
+        100% {
+            transform: translateY(120px);
+         
+        }
+    }
+    
+    
+    .rulla-symboli2 {
+        width: 70%;
+        height: 50%;
+        position:relative;
+        margin: 0px auto;
+        top: 35%;
+        animation: liukuuAlas2 700ms ease-in forwards;
+     
+    }
+
+
+    @keyframes liukuuAlas2 {
+        from {
+            transform: translateY(-200%);
+            opacity: 1;
+        }
+        to {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+
+    .liukuu2{
+        animation: liukuuAlas 500ms ease-in forwards;
+    }
+
+
+    .lukitse{
+        position: relative;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        flex: 1;
+        background-image: url(pelikuvat/hold3.png);
+        background-position: center;
+        background-size: 100% 100%;
+        border: none;
+        
+       
+    }
+
+    .lukitse-napit{
+        top: 60%;
+        position: absolute;
+        display: flex;
+        gap: 15px;
+        justify-content: space-between;
+        width:100%;
+        height: 25px;
+    
+    }
+
+   
+
+   
+    .peli-painikkeet {
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+    .peli-painike {
+        display: inline-block;
+        margin-right: 10px;
+       
+        justify-content: center;
+        align-items: center;
+    }
+   
+
+    .panoslukittu {
+        pointer-events: none;
+        opacity: 0.1;
+    }
+   
+
+    #pelaa-painike{
+
+        background-size: 100% 100%;
+        background-image: url(pelikuvat/play5.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0.7;
+        width: 100px;
+        padding-top: 100px;
+        border: none;
+     
+   
+    }
+    #pelaa-painike:hover{
+        transform: scale(0.95);
+        transition: transform 0.2s ease;  
+    }
+
+    #panosAlas-painike{
+       
+     
+       
+        background-color: transparent;
+        background-image: url(pelikuvat/betdown2.png);
+        background-size: 100% 100%;
+        opacity: 0.7;
+        width: 40px;
+        height: 40px;
+        border: none;
+        margin-bottom: 25px;
+      
+      
+    }
+    #panosAlas-painike:hover{
+        transform: scale(0.95);
+        transition: transform 0.2s ease;
+    }
+
+    #panosYlos-painike{
+    
+      
+    
+        background-color: transparent;
+        background-image: url(pelikuvat/betup2.png);
+        background-size: 100% 100%;
+        opacity: 0.7;
+        width: 40px;
+        height: 40px;
+        border: none;
+        margin-bottom: 25px;
+        
+      
+    }
+    #panosYlos-painike:hover{
+        transform: scale(0.95);
+        transition: transform 0.2s ease;
+    }
+
+
+    #pelitiedot{
+        position: absolute;
+        width: 100%;
+        max-width: 100%;
+        background-color: rgba(0, 0, 0, 0.571);
+        height: 40px;
+        bottom: 0%;
+    }
+
+    .peli-ilmoitus{
+        position: absolute;
+        width: 70%;
+        top: 7%;
+        height: 100px;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        color: white;
+        font-family: inherit;
+        font-weight: bold;
+        animation: laajeneva 2s ease-out forwards;
+        animation-delay: 1000ms;
+        z-index: 500;
+        opacity: 0;
+        
+    }
+    @keyframes laajeneva {
+        0% {
+            width: 0;
+           
+        }
+        100% {
+            width: 70%;
+            opacity: 1;
+        }
+    }
+
+
+
+    .iso-voitto{
+        position: absolute;
+        width: 70%;
+        top: 7%;
+        height: 100px;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        color: white;
+        font-family: inherit;
+        font-weight: bold;
+        animation: laajeneva 2s ease-out forwards;
+        z-index: 500;
+
+    }
+
+   
+
+  
+    #saldo{
+        position:absolute;
+        font-weight: bold;
+        font-size: 13px;
+        left: 1%;
+        bottom: 0;
+        color: whitesmoke;
+    }
+
+    #panos{
+        position:absolute;
+        font-weight: bold;
+        font-size: 13px;
+        left: 48%;
+        bottom: 0;
+        color: whitesmoke;
+    }
+
+    #voitto{
+        position:absolute;
+        font-size: 13px;
+        font-weight: bold;
+        right: 1%;
+        bottom: 0;
+        color: whitesmoke;
+    }
+
+    .modaali {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    
+    .modaali-sisalto {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 2px solid black;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(4px);
+        width: 100%;
+        height: 100%;
+        color: white;
+        font-family: inherit;
+        font-size: large;
+        font-weight: bold;
+    }
+    
+    .sulje {
+        color: #aaa;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 38px;
+        font-weight: bold;
+    }
+    
+    .sulje:hover,
+    .sulje:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+
+    @keyframes vilkutus {
+        0%, 100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.1;
+        }
+      }
+      
+      .vilkku {
+        animation: vilkutus 1000ms linear infinite;
+        width: 60%;
+        height: 50%;
+        position:relative;
+        margin: 0px auto;
+        top: 35%;
+      }
+
+
+    
+      @media only screen and (min-width: 300px) and (max-width:1300px){
+
+        .rulla-container {
+            gap: 5px;
+            width: 80%;
+            height: 30%;
+            top: 25%;
+        
+        }
+    
+        .rulla{
+        
+            height: 60%;
+        
+        }
+
+        .lukitse-napit{
+            gap: 5px;
+         
+        
+        }
+    
+      
+        
+      
+      }
+
+   

@@ -1,0 +1,136 @@
+body{
+  font-family: "Arima", system-ui, sans-serif !important;
+
+}
+
+#logo img{
+  width: 50px;
+}
+
+
+
+.nakymaContainer{
+  background-color:rgb(16, 15, 15);
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  color: white;
+  display: flex;
+    
+}
+.projektiContainer{
+  background-color:rgb(16, 15, 15);
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  height: 80%;
+  color: white;
+ 
+    
+}
+
+.peli-ikkuna{
+  width: 100%;
+  height: 100%;
+ 
+  
+
+}
+
+.embed-responsive-item{
+  width: 40vw;
+  height: 40vw;
+}
+
+
+
+
+
+#nakyma{
+  justify-content:center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#esittelyteksti {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#omakuva {
+  width: 70%;
+  height: auto;
+  max-width: 70%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.tekstit {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+
+#omakuva.visible {
+  opacity: 1;
+}
+
+.tekstit.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.dropdown-item img{
+  width: 30px;
+  align-items: center;
+  margin-right: 10px;
+
+}
+
+
+
+footer{
+
+  justify-content:center;
+  align-items: center;
+  padding-right: 10px;
+  text-align: right;
+  color: white;
+  background-color:rgb(16, 15, 15);
+  font-size: small;
+  width: 100%;
+
+
+}
+
+@media only screen and (min-width: 300px) and (max-width:1300px){
+  .peli-ikkuna{
+    width: 100%;
+    height: 100%;
+   
+  }
+  
+  .embed-responsive-item{
+    width: 80vw;
+    height: 90vw;
+  }
+  
+
+}
+
+
+
+
+
+

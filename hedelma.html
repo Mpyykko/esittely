@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="hedelmapeli/hedelma.css">
+    <link rel="shortcut icon" href="images/m3.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Home</title>
+</head>
+
+<body>
+
+    <div class="pelikone-container" id="pelikone-container">
+
+      
+        
+        <div class="peliohjeet" id="peliohjeet" onclick="suljeVoitot()">
+            <img src="hedelmapeli/pelikuvat/wins.png" width="200" style="margin-top: 50px;"  alt="Voittotaulukko">
+                <div class="kuvasailio">
+    
+                    <img src="hedelmapeli/pelikuvat/seiskat.png" class="kuvat"alt="seiskat">
+
+                    <img src="hedelmapeli/pelikuvat/valiviiva.png" width="100" style="margin: 0 auto;" alt="viiva">
+
+                    <img src="hedelmapeli/pelikuvat/barit.png" class="kuvat"alt="barit">
+
+                    <img src="hedelmapeli/pelikuvat/valiviiva.png" width="100" style="margin: 0 auto;" alt="viiva">
+               
+                    <img src="hedelmapeli/pelikuvat/eset.png" class="kuvat"alt="eset">
+
+                    <img src="hedelmapeli/pelikuvat/valiviiva.png" width="100" style="margin: 0 auto;" alt="viiva">
+
+                    <img src="hedelmapeli/pelikuvat/liput.png" class="kuvat"alt="liput">
+
+                    <img src="hedelmapeli/pelikuvat/valiviiva.png" width="100" style="margin: 0 auto;" alt="viiva">
+                   
+                    <img src="hedelmapeli/pelikuvat/melonit.png" class="kuvat"alt="melonit">
+
+                    <img src="hedelmapeli/pelikuvat/valiviiva.png" width="100" style="margin: 0 auto;" alt="viiva">
+
+                    <img src="hedelmapeli/pelikuvat/tahdet.png" class="kuvat"alt="tahdet">
+
+                    <h6 style="color: white;">Click anywhere to continue</h6>
+
+                    <h6 style="color: rgba(220, 220, 220, 0.249);"> Graphics made by PowerPoint <br> Sounds Freesound / Pixabay<br>  &copy; Mikko Pyykkönen 2024 </h6>
+
+                    
+                </div>
+          
+        </div>
+        
+    <div class="pelikehys">
+        
+
+        <div id="voittoTeksti" class="peli-ilmoitus"> </div>
+        <div id="iso-voitto" class="iso-voitto"> </div>
+        
+        <div id="peli-ilmoitus" class="peli-ilmoitus"> <img src="hedelmapeli/pelikuvat/musakuva.png" class="musakuva" alt="musatpäälle"> </div>
+
+    
+        <img  class="peli-otsikko" id="peli-otsikko" width="100%" src="hedelmapeli/pelikuvat/otsikko2.png" alt="logo" >
+       
+        <div id="pelitiedot" >
+        <span  id="saldo">Balance <br> 50 €</span>
+        
+        <span id="panos">Bet <br> 1 €</span>
+        <span id="voitto">Win <br> 0 € </span>
+        </div>
+
+
+        <div id="peliohje" class="ohjeet" onclick="naytaVoitot()" ></div>
+    
+        <div class="rulla-container" id="rulla-container">
+            <div id="saldo-modaali" class="modaali hidden">
+                <div class="modaali-sisalto">
+                    <span class="sulje" onclick="suljeModaali()">&times;</span>
+                    <p>Not enough balance!</p>
+                </div>
+            </div>
+            <div class="lukitse-napit">
+            <button id="lukitse1" class="lukitse" ></button>
+            <button id="lukitse2" class="lukitse" ></button>
+            <button id="lukitse3" class="lukitse" ></button>
+            <button id="lukitse4" class="lukitse" ></button>
+
+            
+            </div>
+            
+
+        <div id="rulla1" class="rulla">
+     
+        </div>
+
+        <div id="rulla2" class="rulla">
+       
+        </div>
+    
+        <div id="rulla3" class="rulla">
+       
+        </div>
+        
+        <div id="rulla4" class="rulla">
+          
+        </div>
+   
+
+</div>
+
+
+    <div class="peli-painikkeet" id="peli-painikkeet">
+        <div class="peli-painike" id="panosAlas-painike" ></div>
+        <div  class="peli-painike" id="pelaa-painike" ></div>
+        <div class="peli-painike" id="panosYlos-painike" ></div>
+    </div>
+
+    </div>
+
+</div>
+    
+        
+
+</main>
+  
+    
+   
+  
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+   
+    <script src="scripts/hedelma.js"></script>
+   
+    
+</body>
+
+</html>
