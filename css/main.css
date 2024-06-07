@@ -20,8 +20,9 @@ body{
   height: auto;
   color: white;
   display: flex;
-    
 }
+
+
 .projektiContainer{
   background-color:rgb(16, 15, 15);
   align-items: center;
@@ -31,12 +32,11 @@ body{
   width: 100%;
   min-height: 100vh;
   color: white;
-
-
- 
- 
-    
+   
 }
+
+
+  
 
 
 
@@ -61,6 +61,17 @@ body{
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.infokuvat{
+  width: 70%;
+  height: auto;
+  max-width: 70%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  
 }
 
 #omakuva {

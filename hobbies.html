@@ -8,6 +8,33 @@
     <link rel="shortcut icon" href="images/m3.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <title>Harrastukset</title>
+
+    <style>
+
+      .carousel {
+        margin-top: 100px;
+      }
+          
+      .carousel-item {
+        justify-content: center;
+        align-items: center;
+       
+        
+      }
+  
+      .carousel-item img {
+        max-width: 90%;
+        max-height: 90%;
+        border: 2px solid rgba(0, 0, 0, 0.368);
+        border-radius: 7px;
+        height: 500px;
+        width: 500px;
+        margin: 0 auto;
+       
+      }
+    </style>
+
+    
 </head>
 
 <body>
@@ -54,13 +81,65 @@
         </div>
       </nav>
     
-
-
+     
+      
       <div class="nakymaContainer">
-        <div class="nakyma" id="nakyma">
-          <h3> Harrastukset</h3>
+          <div class="nakyma">
+        <h3>Harrastan hyvää ruokaa</h3>
+       
+      
 
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/ruoka1.jpg" class="d-block" alt="ruoka1">
+            </div>
+            <div class="carousel-item">
+              <img src="images/ruoka2.jpg" class="d-block" alt="ruoka2">
+            </div>
+            <div class="carousel-item">
+              <img src="images/ruoka3.jpg" class="d-block" alt="ruoka3">
+            </div>
+            <div class="carousel-item">
+              <img src="images/ruoka4.jpg" class="d-block" alt="ruoka4">
+            </div>
+            <div class="carousel-item">
+              <img src="images/ruoka5.jpg" class="d-block" alt="ruoka5">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Edellinen</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Seuraava</span>
+          </button>
         </div>
+
+        <h3>sekä hyviä oluita</h3>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/olut1.JPG" class="d-block" alt="olut 1">
+            </div>
+           
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Edellinen</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Seuraava</span>
+          </button>
+        </div>
+        
+        
+        
+
+      </div>
+
     </div>
 
    
@@ -75,6 +154,7 @@
 
 
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="scripts/main.js"></script>
