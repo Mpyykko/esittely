@@ -881,14 +881,6 @@ async function lukotAuki(){
 
 function naytaVoitot() {
   
-
-    // pelivalikko piiloon
- 
-  
-    document.getElementById('peli-painikkeet').style.display = 'none';
-   
-   
-
     // näytetään voitot
     document.getElementById('peliohjeet').style.display = 'block';
     document.getElementById('peliohjeet').scrollTop = 0;
@@ -899,13 +891,6 @@ function naytaVoitot() {
 
 
 function suljeVoitot() {
-
-  
-    // toisin päin
- 
-  
-    document.getElementById('peli-painikkeet').style.display = 'block';
-   
 
     document.getElementById('peliohjeet').style.display = 'none';
     
