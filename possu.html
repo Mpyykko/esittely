@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="sikapeli/possu.css">
+    <link rel="shortcut icon" href="images/m3.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Possu</title>
+</head>
+
+<body>
+
+    <main>
+
+        <audio id="klik">
+            <source src="sounds/klik1.wav" >
+        </audio>
+
+        <audio id="nopat">
+            <source src="sounds/nopanheitto1.wav" >
+        </audio>
+
+        <audio id="ykkonen">
+            <source src="sounds/oops2.wav" >
+        </audio>
+
+        <audio id="voitto">
+            <source src="sounds/voitto.wav" >
+        </audio>
+
+        <audio id="tuplanopat">
+            <source src="sounds/tadaa.wav" >
+        </audio>
+
+        <audio id="collect">
+            <source src="sounds/collect.mp3" >
+        </audio>
+
+        <section>
+        
+                <img id="logo" src="sikapeli/sikanoppa-kuvat/sikalogo2.png" width="300" alt="sikalogo">
+           
+        </section>
+
+        <section>
+            <div class="sikanoppa-kehys">
+                <div id="pelikentta" class="pelikentta">
+
+                    
+                    <button class="pelivalintabuttonit2" id="home3" onclick="naytaKotivalikko()" >Koti</button>
+                    <button class="pelivalintabuttonit2" id="uusipeli" onclick="uusiPeli()" >Uusi peli</button> <br>
+                    
+
+                
+
+                    
+                
+                
+                    <div id="noppanaytto" class="noppanaytto">
+                        <div class="noppanayton-valikko" id="noppanayton-valikko" >
+
+                            
+                            <div class="noppien-summanaytto"> <span  id="noppien-summa" >Pisteet: 0</span></div>
+                        </div>
+
+                        <span id="kukaPelaa-naytto" ></span>
+
+                        <div id="voittokuva" class="voittokuva"></div>
+                        <div id="voittajan-nimi" ></div>
+                       
+
+                    
+                    <div class="ilmoitusnaytto"> <span id="ilmoitus" ></span> </div>
+                    <div class="tulosnaytto" id="tulosnaytto" >
+                    
+                    </div>
+                    <div class="tulosnaytto2" id="tulosnaytto2" ></div>
+
+                    
+                    
+
+                    
+
+                </div>
+
+              
+
+                    
+                    
+                
+                
+
+                
+                <button class="pelivalintabuttonit2" id="heita" onclick="valitseHeitto()" >Heitä</button>
+                <button class="pelivalintabuttonit2" id="eiheita" >Kerää</button> <br>
+                <div class="pelaajan-pisteet">
+                    <span  id="pelaajan-pisteet" ></span>
+                </div>
+
+
+                </div>
+
+
+
+                <div id="aloitusnaytto" class="pelivalikko">
+                    <h4 class="pelitekstit">Tervetuloa pelaamaan sikanoppaa!</h4> <br>
+                    <p class="pelitekstit" > Valitse pelimuoto</p>
+        
+                <button id="yhdellanopalla" class="pelivalintabuttonit" >1 noppa</button>
+                <button id="kahdellanopalla" class="pelivalintabuttonit" >2 noppaa</button> <br>
+
+                <button id="seuraava" class="seuraava-painike" onclick="naytaToinenValikko()" disabled>Seuraava</button>
+                <button id="peliohjeet-button" class="pelivalintabuttonit" onclick="naytaPeliohjeet()" >Peliohjeet</button>
+                </div>
+
+                <div id="peliohjeet" class="peliohjeet" >
+                    <div id="peliohjeteksti" >
+                        <h3>Peliohjeet yhdellä nopalla</h3>
+        
+                        <p>Heitä noppaa. <br> <br> Heiton jälkeen voit päättää haluatko kerätä pisteet vai jatkaa heittämistä. <br><br>
+                            Mikäli jatkat heittämistä, heittovuorosi kaikki nopat lasketaan yhteen. <br> <br> Jos heität ykkösen, et
+                            saa heittokierrokselta yhtään pistettä ja vuoro vaihtuu seuraavalle.
+                            </p>
+                        <p>Pelaaja joka saa ensimmäisenä 100 pistettä voittaa</p>
+                    </div>
+
+                        <button class="pelivalintabuttonit2" id="home" onclick="naytaKotivalikko()">Takaisin alkuun </button>
+
+                        <button class="pelivalintabuttonit2" id="peliohje2" onclick="naytaPeliohjeet2()" >2 nopan säännöt</button>
+                    
+                </div>
+
+                <div id="peliohjeet2" class="peliohjeet2" >
+                    <div id="peliohjeteksti2" >
+                        <h3>Peliohjeet kahdella nopalla</h3>
+        
+                        <p>Heitä kahta noppaa. <br> <br> Jos heität tuplat, saat tuplapisteet. <br> <br> Jos heität kaksi ykköstä, saat 25 pistettä. <br> <br>
+                            Jos heität vain toisella nopalla ykkösen, tai kolme kertaa peräkkäin tuplat, vuoro siirtyy seuraavalle pelaajalle etkä saa kierrokselta pisteitä. <br> <br>
+
+
+                            
+                        Pelaaja joka saa ensimmäisenä 100 pistettä voittaa.</p>
+                    </div>
+
+                        <button class="pelivalintabuttonit2" id="peliohje" onclick="naytaPeliohjeet()" >Takaisin</button>
+
+                        
+                    
+                </div>
+                
+
+                <div id="pelivalikko2" class="pelivalikko2">
+
+                    <button class="pelivalintabuttonit2" id="home2" onclick="naytaKotivalikko()" >Takaisin alkuun</button> 
+                    
+                   
+
+                    <h4 class="pelitekstit" >Syötä pelaajien nimet </h4>
+                    <h6 class="pelitekstit" >(2-4 pelaajaa)</h6>
+                    <button class="pelivalintabuttonit2" id="aloitapeli-button" onclick="naytaPelikentta()">Aloita peli</button>
+
+                    <span id="pelaajainfo" ></span> <br>
+                  
+
+                    <input id="pelaajat" class="pelaajat" type="text"  placeholder="Syötä pelaajan nimi">
+                    <button id="lisattyPelaaja" class="pelivalintabuttonit2" onclick="pelaajalisatty('lisaa')">Lisää</button>
+                    
+                    <br>
+
+                    
+ 
+                    
+                    <span id="pelaajanaytto"></span>
+
+                    
+                
+                </div>
+
+
+
+            </div>
+        </section>
+
+        
+    
+        
+    
+
+        
+    </main>
+
+   
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+   
+    <script src="scripts/possu.js"></script>
+   
+    
+</body>
+
+</html>

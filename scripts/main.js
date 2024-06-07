@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const projectLinks = [
     { name: 'hedelma.html', description: 'Hedelmäpeli' },
-    { name: 'https://mpyykko.github.io/JS/sikanoppa.html', description: 'Sikanoppapeli' },
+    { name: 'possu.html', description: 'Sikanoppapeli' },
     { name: 'https://mpyykko.github.io/JS/clicker.html', description: 'Clicker-peli' }
 ];
 
