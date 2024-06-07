@@ -187,8 +187,7 @@ function naytaPelikentta() {
     klik();
 
     document.getElementById('tulosnaytto').innerHTML = "<img src='sikapeli/sikanoppa-kuvat/possu1.png'>";
-    
-    
+  
 
    
     // Näytetään vuorossa oleva pelaaja
