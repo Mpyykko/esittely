@@ -34,33 +34,30 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 const projectLinks = [
-    'hedelma.html',
-    'https://mpyykko.github.io/JS/sikanoppa.html',
-    'https://mpyykko.github.io/JS/clicker.html',
-   
-  ];
+    { name: 'hedelma.html', description: 'Hedelmäpeli' },
+    { name: 'https://mpyykko.github.io/JS/sikanoppa.html', description: 'Sikanoppapeli' },
+    { name: 'https://mpyykko.github.io/JS/clicker.html', description: 'Clicker-peli' }
+];
 
 
 let currentProjectIndex = 0;
 let iframe = document.querySelector('.embed-responsive-item');
+let projectInfo = document.getElementById('projekti-info');
 
- 
+function updateProject() {
+    let currentProject = projectLinks[currentProjectIndex];
+    iframe.setAttribute('src', currentProject.name);
+    projectInfo.textContent = currentProject.description;
+}
+
 function showNext() {
-  
-   
     currentProjectIndex = (currentProjectIndex + 1) % projectLinks.length;
-    let nextSrc = projectLinks[currentProjectIndex];
-    iframe.setAttribute('src', nextSrc);
-  }
+    updateProject();
+}
 
 function showPrevious() {
-   
-    let iframe = document.querySelector('.embed-responsive-item');
-
-  
     currentProjectIndex = (currentProjectIndex - 1 + projectLinks.length) % projectLinks.length;
-    let previousSrc = projectLinks[currentProjectIndex];
-    iframe.setAttribute('src', previousSrc);
+    updateProject();
 }
 
 
