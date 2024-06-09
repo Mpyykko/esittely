@@ -15,7 +15,7 @@
     height: 40px;
     transform: translateX(-50%);
     border: 2px solid rgb(63, 63, 63);
-    border-radius: 15px;
+    border-radius: 20px;
     background-color: rgb(41, 41, 41);
     color: white;
     display: flex;
@@ -23,9 +23,10 @@
 }
 
 .mobilenav_button img {
-    max-width: 50%;
-    max-height: 50%;
+    max-width: 30%;
+    max-height: 30%;
     padding-right: 10px;
+   
 }
 
 
@@ -37,7 +38,7 @@
     max-height: 0;
     overflow: hidden;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.874);
+    background-color: rgba(255, 255, 255, 0.920);
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     transition: max-height 0.3s ease-out;
     font-weight: bold;
@@ -63,6 +64,7 @@
     border-bottom: 1px solid rgba(128, 128, 128, 0.404);
     justify-content: space-around;
 
+
 }
 
 .scrollable-content1 a {
@@ -73,8 +75,8 @@
 }
 
 .scrollable-content1 img {
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
     border-radius: 3px;
 }
 

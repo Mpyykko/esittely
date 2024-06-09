@@ -58,10 +58,17 @@ body{
 }
 
 
+
+
+
 #nakyma{
   justify-content:center;
   align-items: center;
   overflow: hidden;
+}
+
+#nakyma img{
+  max-width: 100%;
 }
 
 #esittelyteksti {
@@ -91,10 +98,15 @@ body{
   transition: opacity 1s ease-in-out;
 }
 
+#esittelyteksti{
+  margin-top: 50px;
+}
+
 .tekstit {
   opacity: 0;
   transform: translateX(100%);
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  
 }
 
 
@@ -136,10 +148,10 @@ footer{
     height: 100%;
    
   }
-  
-  .embed-responsive-item{
-    width: 90vw;
-    height: 60vh;
+
+  .carousel img{
+    width: 90%;
+    height: 50vh;
   }
   
 
