@@ -24,7 +24,7 @@ body{
   min-height: 100vh;
   height: auto;
   color: white;
-  display: flex;
+  padding-top: 100px;
 }
 
 
@@ -52,7 +52,10 @@ body{
 }
 
 
-
+.carousel{
+  margin-top: 0;
+  margin-bottom: 70px;
+}
 
 
 #nakyma{
@@ -72,8 +75,7 @@ body{
   width: 70%;
   height: auto;
   max-width: 70%;
-  margin-top: 50px;
-  margin-bottom: 50px;
+
   opacity: 0;
   transition: opacity 1s ease-in-out;
   
