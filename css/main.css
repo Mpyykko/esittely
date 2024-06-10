@@ -108,9 +108,9 @@ body{
 }
 
 #omakuva {
-  width: 70%;
+  width: 50%;
   height: auto;
-  max-width: 70%;
+  max-width: 50%;
   margin-top: 50px;
   margin-bottom: 50px;
   opacity: 0;
@@ -166,21 +166,28 @@ footer{
 
 
   
-    .carousel {
-      margin-top: 50px;
-      max-width: 90%;
-      max-height: 50%;
-      margin-bottom: 100px;
-      align-items: center;
-      justify-content: center;
-    }
+  .carousel {
+    margin-top: 50px;
+    max-width: 90%;
+    max-height: 50%;
+    margin-bottom: 100px;
+    align-items: center;
+    justify-content: center;
+}
 
   .peli-ikkuna iframe{
     width: 80%;
     height: 50vh;
     
 
-  }
+}
+
+#omakuva {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+ 
+}
 
 
 
