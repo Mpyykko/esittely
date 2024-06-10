@@ -63,7 +63,6 @@ function showPrevious() {
 
 
 
-
 muotoilePaivamaara();
 
 
