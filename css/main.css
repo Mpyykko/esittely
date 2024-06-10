@@ -40,13 +40,29 @@ body{
    
 }
 
-
-
-
-.carousel{
-  margin-top: 0;
-  margin-bottom: 70px;
+.carousel {
+  margin-top: 50px;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  align-items: center;
+  justify-content: center;
 }
+    
+
+
+.carousel-item img {
+  border: 2px solid rgba(0, 0, 0, 0.368);
+  border-radius: 7px;
+  margin: 0 auto;
+  width: 400px;
+  height: 400px;
+  max-width: 100%;
+  max-height: 100%;
+ 
+}
+
 
 
 
@@ -55,7 +71,9 @@ body{
 #nakyma{
   justify-content:center;
   align-items: center;
-  overflow: hidden;
+ 
+
+  
 }
 
 #nakyma img{
@@ -136,12 +154,18 @@ footer{
 }
 
 @media (max-width:1300px){
- 
 
-  .carousel img{
-    width: 90%;
-    height: 30vh;
-  }
+
+
+  
+    .carousel {
+      margin-top: 50px;
+      max-width: 90%;
+      max-height: 50%;
+      margin-bottom: 100px;
+      align-items: center;
+      justify-content: center;
+    }
 
   .peli-ikkuna iframe{
     width: 80%;
