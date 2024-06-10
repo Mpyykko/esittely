@@ -106,6 +106,37 @@
 }
 
 
+.thumbnail {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  
+  .large-image-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 5px;
+    border-radius: 10px;
+    z-index: 1000;
+  }
+  
+  .large-image-container img {
+    max-width: 100%;
+    max-height: 80vh;
+    display: block;
+  }
+  
+  .large-image-container.active {
+    display: block;
+  }
+
+
+
 
 @media (max-width: 800px) {
     .mobilenav {

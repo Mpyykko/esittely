@@ -60,7 +60,25 @@ function showPrevious() {
     updateProject();
 }
 
-
+document.addEventListener('DOMContentLoaded', function() {
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    const largeImageContainer = document.getElementById('largeImageContainer');
+    const largeImage = document.getElementById('largeImage');
+  
+    thumbnails.forEach(thumbnail => {
+      thumbnail.addEventListener('click', function(event) {
+        event.preventDefault();
+        const imageSrc = this.getAttribute('data-image');
+        largeImage.setAttribute('src', imageSrc);
+        largeImageContainer.classList.add('active');
+      });
+    });
+  
+    largeImageContainer.addEventListener('click', function() {
+      largeImageContainer.classList.remove('active');
+    });
+  });
+  
 
 
 muotoilePaivamaara();
