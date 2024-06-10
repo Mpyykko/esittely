@@ -40,6 +40,14 @@ body{
    
 }
 
+.embed-responsive-item{
+  width: 500px;
+  height: 500px;
+}
+
+
+
+
 .carousel {
   margin-top: 50px;
   width: 400px;

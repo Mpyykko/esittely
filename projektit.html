@@ -8,7 +8,21 @@
     <link rel="stylesheet" href="css/mobile.css">
     <link rel="shortcut icon" href="images/m3.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <title>Home</title>
+   
+    <title>Projektit</title>
+
+     <style>
+  
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: auto;
+            height: auto;
+            left: 150px;
+            right: 150px;
+        }
+      
+        
+    </style>
 </head>
 
 <body>
@@ -62,12 +76,23 @@
             <span id="projekti-info">Hedelmäpeli</span>
             <div class="peli-ikkuna">
                 <iframe class="embed-responsive-item" src="hedelma.html"  ></iframe>
-            </div>
+           
 
-            <div class="text-center mt-4">
-              <button class="btn btn-primary" onclick="showPrevious()">Edellinen</button>
-              <button class="btn btn-primary" onclick="showNext()">Seuraava</button>
+            <div class="text-center mt-4 position-relative">
+              <button class="carousel-control-prev position-absolute start-0" type="button" onclick="showPrevious()">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Edellinen</span>
+              </button>
+              <button class="carousel-control-next position-absolute end-0" type="button" onclick="showNext()">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Seuraava</span>
+              </button>
           </div>
+
+        </div>
+
+        </div>
+      
  
            
         </div>
@@ -120,7 +145,7 @@
 
 
 
-
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="scripts/main.js"></script>
