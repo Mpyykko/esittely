@@ -69,6 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const nextBtn = document.getElementById('nextBtn');
     const mobileNav = document.getElementById('mobilenav_button');
     const topnav = document.getElementById('topnav');
+    const closeButton = document.getElementById('mobile-close');
 
     
   
@@ -116,6 +117,17 @@ document.addEventListener('DOMContentLoaded', function() {
         largeImageContainer.style.display = 'none';
    
     });
+
+    largeImage.addEventListener('click', function() {
+        largeImageContainer.style.display = 'none';
+   
+    });
+
+    closeButton.addEventListener('click', function() {
+        largeImageContainer.style.display = 'none';
+   
+    });
+  
   
    
    
