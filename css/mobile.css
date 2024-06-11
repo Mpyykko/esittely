@@ -68,7 +68,7 @@
     text-align: center;
     background-color:azure;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: max-height 0.8s ease-out;
+    transition: max-height 0.7s ease-out;
     font-weight: bold;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -79,7 +79,7 @@
 
 .mobilenav_content.open {
     max-height: 500px;
-    transition: max-height 0.8s ease-out;
+    transition: max-height 0.7s ease-out;
   
 }
 

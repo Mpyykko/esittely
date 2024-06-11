@@ -25,6 +25,27 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }); */
 
+    document.addEventListener('click', function(event) {
+        const targetElement = event.target;
+        const isInsideMobileNav = content.contains(targetElement);
+        const isNavBarClicked = targetElement.id === 'topnav';
+    
+        if (!isInsideMobileNav && !isNavBarClicked) {
+            content.classList.remove('open');
+        }
+    });
+
+    const mobilenavButton = document.getElementById('mobilenav_button');
+    const dropdownMenu = document.querySelector('.navbar-collapse');
+
+    mobilenavButton.addEventListener('click', function() {
+
+        
+        dropdownMenu.classList.remove('show');
+});
+
+
+
 
    
 
