@@ -72,8 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const closeButton = document.getElementById('mobile-close');
 
     
-  
-
+    
 
     let images = [];
     thumbnails.forEach(thumbnail => {
@@ -128,9 +127,6 @@ document.addEventListener('DOMContentLoaded', function() {
    
     });
   
-  
-   
-   
 
    
 });

@@ -168,11 +168,16 @@ footer{
   
   .carousel {
     margin-top: 50px;
-    max-width: 90%;
-    max-height: 50%;
+    max-width: 80%;
     margin-bottom: 100px;
     align-items: center;
     justify-content: center;
+}
+
+.carousel-item img{
+  max-width: 100%;
+  max-height: 400px;
+ 
 }
 
   .peli-ikkuna iframe{

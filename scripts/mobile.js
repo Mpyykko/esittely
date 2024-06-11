@@ -11,7 +11,10 @@ document.addEventListener("DOMContentLoaded", function() {
     closeButton.addEventListener('click', function(event) {
         event.stopPropagation();
         content.classList.remove('open');
+
     });
+
+     /*
 
     document.addEventListener('click', function(event) {
         const targetElement = event.target;
@@ -20,5 +23,10 @@ document.addEventListener("DOMContentLoaded", function() {
         if (!isInsideMobileNav && !targetElement.classList.contains('mobilenav_button')) {
             content.classList.remove('open');
         }
-    });
+    }); */
+
+
+   
+
 });
+

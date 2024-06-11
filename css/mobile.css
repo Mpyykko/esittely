@@ -24,6 +24,14 @@
     text-align: center;
 }
 
+.mobilenav_button img {
+    max-width: 40%;
+    max-height: 50%;
+    padding-right: 5px;
+  
+   
+}
+
 .mobile-close {
  
     height: 40px;
@@ -47,12 +55,7 @@
 }
 
 
-.mobilenav_button img {
-    max-width: 40%;
-    max-height: 50%;
-    padding-right: 5px;
-   
-}
+
 
 
 
@@ -146,6 +149,8 @@
     height: 50%;
     width: 140%;
 }
+
+
 
 
   
