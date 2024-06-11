@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav id="topnav" class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
           <a id="logo" class="navbar-brand" href="index.html"> <img  src="images/m3.png" alt="Esittelysivu kuva">Esittelysivu</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,7 +61,7 @@
         
         <div class="nakyma">
           <h3>Työ</h3>
-          <img id="omakuva" src="images/paku.jpg" alt="ite">
+          <img id="paku" src="images/paku.jpg" style=" width: 600px; max-width: 80%; padding-bottom: 50px;" alt="paku">
           <div class="tekstit" >
             <p>Työskentelen kalustovastaavana ja sen ohessa myös kuljettajana. <br> Nykyisessä työsuhteessa olen ollut
               vuodesta 2010.
@@ -74,7 +74,7 @@
     </div>
 
     <div class="mobilenav">
-      <button class="mobilenav_button"><img src="images/burgerwhite.png" alt="navi">Menu</button>
+      <button id="mobilenav_button" class="mobilenav_button"><img src="images/burgerwhite.png" alt="navi">Menu</button>
       <div class="mobilenav_content">
        
         <div class="scrollable-content1">
@@ -100,9 +100,18 @@
         </div>
         
         <div id="largeImageContainer" class="large-image-container">
-          <img id="largeImage" src="" alt="Large Image">
-        </div> 
-
+          <img id="largeImage" src="images/ruoka1.JPG" alt="Large Image">
+      
+          <button class="carousel-control-prev" type="button" id="prevBtn">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Edellinen</span>
+          </button>
+          <button class="carousel-control-next" type="button" id="nextBtn">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Seuraava</span>
+          </button>
+      </div>
+     
 
         <div class="scrollable-content1">
           <a href="https://github.com/Mpyykko" target="_blank"><img src="images/gi.png" alt="github"></a>

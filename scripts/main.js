@@ -60,34 +60,71 @@ function showPrevious() {
     updateProject();
 }
 
+
 document.addEventListener('DOMContentLoaded', function() {
-  const thumbnails = document.querySelectorAll('.thumbnail');
-  const largeImageContainer = document.getElementById('largeImageContainer');
-  const largeImage = document.getElementById('largeImage');
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    const largeImageContainer = document.getElementById('largeImageContainer');
+    const largeImage = document.getElementById('largeImage');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const mobileNav = document.getElementById('mobilenav_button');
+    const topnav = document.getElementById('topnav');
 
-  thumbnails.forEach(thumbnail => {
-      thumbnail.addEventListener('click', function(event) {
-          event.preventDefault();
-          const imageSrc = this.getAttribute('data-image');
-          largeImage.setAttribute('src', imageSrc);
-          largeImageContainer.classList.add('active');
-      });
-  });
+    
+  
 
-  largeImageContainer.addEventListener('click', function(event) {
-      if (event.target === largeImageContainer || event.target === largeImage) {
-          largeImageContainer.classList.remove('active');
-      }
-  });
 
-  document.addEventListener('click', function(event) {
-      if (!largeImageContainer.contains(event.target) && !event.target.classList.contains('thumbnail')) {
-          largeImageContainer.classList.remove('active');
-      }
-  });
+    let images = [];
+    thumbnails.forEach(thumbnail => {
+        images.push(thumbnail.getAttribute('data-image'));
+    });
+
+    let currentIndex = 0;
+
+    function updateImage(index) {
+        largeImage.src = images[index];
+    }
+
+    thumbnails.forEach((thumbnail, index) => {
+        thumbnail.addEventListener('click', function(event) {
+            event.preventDefault();
+            currentIndex = index;
+            updateImage(currentIndex);
+    
+            largeImageContainer.style.display = 'block';
+    
+            
+        });
+    });
+
+    prevBtn.addEventListener('click', function(event) {
+        currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+        updateImage(currentIndex);
+    });
+
+    nextBtn.addEventListener('click', function(event) {
+        currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+        updateImage(currentIndex);
+    });
+
+    mobileNav.addEventListener('click', function() {
+        largeImageContainer.style.display = 'none';
+          
+    });
+    
+    topnav.addEventListener('click', function() {
+        largeImageContainer.style.display = 'none';
+   
+    });
+  
+   
+   
+
+   
 });
 
-  
+
+
 
 
 muotoilePaivamaara();
