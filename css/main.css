@@ -146,6 +146,25 @@ body{
 }
 
 
+.copy-button {
+  cursor: pointer;
+  background-color: #5757574f;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+.copied-message {
+  background-color: #007a109d;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 3px;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
 
 
 footer{
@@ -158,9 +177,10 @@ footer{
   background-color:rgb(16, 15, 15);
   font-size: small;
   width: 100%;
-
-
 }
+
+
+
 
 @media (max-width:1300px){
 

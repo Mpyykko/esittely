@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="images/m3.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     
-    <title>Home</title>
+    <title>Fullstack</title>
 </head>
 
 <body>
@@ -35,9 +35,9 @@
                   Opinnot
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Yleistä</a></li>
-                  <li><a class="dropdown-item" href="projektit.html">Projektit</a></li>
-                  <li><a class="dropdown-item" href="fso.html">Fullstack Open</a></li>
+                  <li><a id="yleista" class="dropdown-item" href="#">Yleistä</a></li>
+                  <li><a id="projekti" class="dropdown-item" href="projektit.html">Projektit</a></li>
+                  <li><a id="suunnitelma" class="dropdown-item" href="#">Fullstack Open</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -61,19 +61,158 @@
       <div id="omaesittely" class="nakymaContainer" >
 
         <div class="nakyma" id="nakyma">
-          <h3>Hello!</h3>
-          <img id="omakuva" src="images/omaite.jpg" alt="oma">
-          <div id="esittelyteksti">
-            
-              <div class="tekstit">
-                <p>Tähän tulisi jonkinlaista esittelytekstiä.
-                  Tähän tulisi jonkinlaista esittelytekstiä.
-                </p>
-                <p>Tähän tulisi lisää tekstiä.
+            <div class="container">
+                <h2>Frontend</h2>
+                <table class="table table-bordered" style="color: white;">
+                 
+                  </thead>
+                  <tbody>
+                    <tr>
+                        <td>React-projektin luominen</td>
+                        <td id="a">
+                          npm create vite@latest nimi -- --template react
+                          <button class="copy-button" onclick="copyRow('a')">Kopioi</button>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>Node paketti</td>
+                        <td id="b" >cd nimi
+                            npm install
+                           <button class="copy-button" onclick="copyRow('b')">Kopioi</button>
+                        </td>
+                      </tr>
+
                 
-              </p>
-            </div>
-          </div>
+                    <tr>
+                      <td>Projektin käynnistäminen</td>
+                      <td id="c" >npm run dev
+                         <button class="copy-button" onclick="copyRow('c')">Kopioi</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>JSON-server</td>
+                      <td>projektin juurihakemistoon tiedosto db.json <br>
+                    </td>
+                    <tr>
+                        <td>JSON-serverin alustus</td>
+                        <td id="d">npx json-server --port=3001 --watch db.json
+                            <button class="copy-button" onclick="copyRow('d')">Kopioi</button>
+                        </td>
+                      </tr>
+                    </tr>
+                    <tr>
+                        <td>Axios-kirjaston asennus</td>
+                        <td id="e">npm install axios 
+                            <button class="copy-button" onclick="copyRow('e')">Kopioi</button>
+                      </td>
+                    <tr>
+                    <tr>
+                        <td>JSON Server projektin sovelluskehityksen aikaiseksi riippuvuudeksi</td>
+                        <td id="f">npm install json-server --save-dev 
+                            <button class="copy-button" onclick="copyRow('f')">Kopioi</button>
+                        </td>
+                    <tr>
+                    <tr>
+                        <td>tiedoston package.json osaan scripts lisäys</td>
+                        <td id="g">"server": "json-server -p3001 --watch db.json"
+                            <button class="copy-button" onclick="copyRow('g')">Kopioi</button>
+                        </td>
+                    <tr>
+
+                    <tr>
+                        <td>JSON-serverin käynnistys</td>
+                        <td id="h">npm run server
+                            <button class="copy-button" onclick="copyRow('h')">Kopioi</button>
+                        </td>
+                    <tr>
+
+                    <tr>
+                        <td>Production build</td>
+                        <td id="i">npm run build
+                            <button class="copy-button" onclick="copyRow('i')">Kopioi</button>
+                        </td>
+                    <tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="container">
+                <h2>Backend</h2>
+                <table class="table table-bordered" style="color: white;">
+                
+                  <tbody>
+                    <tr>
+                      <td>Noden alustus</td>
+                      <td id="j">npm init
+                        <button class="copy-button" onclick="copyRow('j')">Kopioi</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>kenttään scripts lisäys</td>
+                      <td id="k">"start": "node index.js"
+                        <button class="copy-button" onclick="copyRow('k')">Kopioi</button>
+                    </tr>
+                    <tr>
+                      <td>Suorita index.js</td>
+                      <td id="l">npm start
+                        <button class="copy-button" onclick="copyRow('l')">Kopioi</button>
+                      </td>
+                    </tr>
+                    <tr>
+                        <td>Express asennus</td>
+                        <td id="m">npm install express
+                            <button class="copy-button" onclick="copyRow('m')">Kopioi</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nodemon asennus</td>
+                        <td id="n">npm install --save-dev nodemon
+                            <button class="copy-button" onclick="copyRow('n')">Kopioi</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Käynnistä palvelin</td>
+                        <td id="o">npm run dev
+                            <button class="copy-button" onclick="copyRow('o')">Kopioi</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> CORS (Cross-Origin Resource Sharing) asennus</td>
+                        <td id="p">npm install cors
+                            <button class="copy-button" onclick="copyRow('p')">Kopioi</button>
+                        </td>
+                    </tr>
+                    
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="container">
+                <h2>Tietokannat</h2>
+                <table id="copyTable" class="table table-bordered" style="color: white;">
+                
+                  <tbody>
+                    <tr>
+                      <td>Mongoosen asennus</td>
+                      <td id="q">npm install mongoose
+                        <button class="copy-button" onclick="copyRow('q')">Kopioi</button>
+                      </td>
+                      
+                     
+                    </tr>
+                    <tr>
+                      <td>kenttään scripts lisäys</td>
+                      <td id="r">"start": "node index.js"
+                        <button class="copy-button" onclick="copyRow('r')">Kopioi</button>
+                      </td>
+                    </tr>
+                   
+                    
+                  </tbody>
+                </table>
+              </div>
+        
         </div>
     
 
@@ -82,10 +221,10 @@
       <div class="mobilenav_content">
        
         <div class="scrollable-content1">
-          <a href="index.html"><img src="images/home2.png" alt="Home"></a>
+          <a href="index.html"><img src="images/home2.png" alt=""></a>
           <a href="mina.html">Minä</a>
           <a href="tyo.html">Työ</a>
-          <a href="fso.html">Fullstack</a>
+          <a href="hobbies.html">Harrastukset</a>
           <a href="projektit.html">Projektit</a>
         </div>
 

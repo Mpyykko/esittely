@@ -22,12 +22,15 @@
     display: flex;
     align-items: center;
     text-align: center;
+    box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.521);
+
 }
 
 .mobilenav_button img {
     max-width: 40%;
     max-height: 50%;
     padding-right: 5px;
+   
   
    
 }
@@ -43,6 +46,8 @@
     display: flex;
     align-items: center;
     text-align: center;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.521);
+
 }
 
 .mobile-close img {
@@ -74,12 +79,12 @@
     border-top-right-radius: 10px;
     height: auto;
     
-  
 }
 
 .mobilenav_content.open {
     max-height: 500px;
     transition: max-height 0.7s ease-out;
+    
   
 }
 

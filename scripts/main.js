@@ -131,6 +131,35 @@ document.addEventListener('DOMContentLoaded', function() {
    
 });
 
+function copyRow(id) {
+    let tdElement = document.getElementById(id);
+    let clonedElement = tdElement.cloneNode(true);
+
+    let buttons = clonedElement.getElementsByTagName('button');
+    while (buttons.length > 0) {
+      buttons[0].remove();
+    }
+    
+   
+    let textToCopy = clonedElement.textContent.trim();
+    
+    navigator.clipboard.writeText(textToCopy)
+      .then(() => {
+        showCopiedMessage();
+      })
+     
+  }
+  
+  function showCopiedMessage() {
+    let messageElement = document.createElement('div');
+    messageElement.textContent = 'Kopioitu';
+    messageElement.className = 'copied-message';
+    document.body.appendChild(messageElement);
+    
+    setTimeout(() => {
+      messageElement.remove();
+    }, 2000);
+  }
 
 
 
