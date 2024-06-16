@@ -40,6 +40,8 @@ body{
    
 }
 
+
+
 .embed-responsive-item{
   width: 500px;
   height: 500px;
@@ -187,7 +189,9 @@ footer{
 
 
 
-@media (max-width:1300px){
+
+
+@media (max-width:1000px){
 
 
 
@@ -206,9 +210,9 @@ footer{
  
 }
 
-  .peli-ikkuna iframe{
-    width: 80%;
-    height: 50vh;
+.peli-ikkuna iframe{
+  width: 80%;
+  height: 50vh;
     
 
 }
@@ -223,5 +227,19 @@ footer{
 
 
 }
+
+@media (min-width:1001px){
+
+
+.peli-ikkuna iframe{
+  width: 500px;
+  height: 500px;
+    
+
+}
+
+
+}
+
 
 
