@@ -719,7 +719,7 @@ lukitseNappi1.addEventListener('click', function() {
     if (!onLukittu1) {
         klikki();
         // jos painettu, lukossa
-        lukitseNappi1.style.backgroundImage = "url('hedelmapeli/pelikuvat/holded3.png')";
+        lukitseNappi1.style.filter = "brightness(40%)";
         onLukittu1 = true;
         lukitukset =1;
        
@@ -727,7 +727,7 @@ lukitseNappi1.addEventListener('click', function() {
         klikki();
         
         // jos ei painettu
-        lukitseNappi1.style.backgroundImage = "url('hedelmapeli/pelikuvat/hold3.png')";
+        lukitseNappi1.style.filter = "brightness(100%)";
         onLukittu1 = false;
         lukitukset = 0;
     
@@ -744,14 +744,14 @@ lukitseNappi2.addEventListener('click', function() {
     if (!onLukittu2) {
         klikki();
         // jos painettu, lukossa
-        lukitseNappi2.style.backgroundImage = "url('hedelmapeli/pelikuvat/holded3.png')";
+        lukitseNappi2.style.filter = "brightness(40%)";
         onLukittu2 = true;
         lukitukset =1;
       
     } else {
         klikki();
         // jos ei painettu
-        lukitseNappi2.style.backgroundImage = "url('hedelmapeli/pelikuvat/hold3.png')";
+        lukitseNappi2.style.filter = "brightness(100%)";
         onLukittu2 = false;
         lukitukset = 0;
      
@@ -770,14 +770,14 @@ lukitseNappi3.addEventListener('click', function() {
     if (!onLukittu3) {
         klikki();
         // jos painettu, lukossa
-        lukitseNappi3.style.backgroundImage = "url('hedelmapeli/pelikuvat/holded3.png')";
+        lukitseNappi3.style.filter = "brightness(40%)";
         onLukittu3 = true;
         lukitukset =1;
      
     } else {
         klikki();
         // jos ei painettu
-        lukitseNappi3.style.backgroundImage = "url('hedelmapeli/pelikuvat/hold3.png')";
+        lukitseNappi3.style.filter = "brightness(100%)";
         onLukittu3 = false;
         lukitukset = 0;
       
@@ -798,7 +798,7 @@ lukitseNappi4.addEventListener('click', function() {
     if (!onLukittu4) {
         klikki();
         // jos painettu, lukossa
-        lukitseNappi4.style.backgroundImage = "url('hedelmapeli/pelikuvat/holded3.png')";
+        lukitseNappi4.style.filter = "brightness(40%)";
         onLukittu4 = true;
         lukitukset =1;
    
@@ -806,7 +806,7 @@ lukitseNappi4.addEventListener('click', function() {
         klikki();
         
         // jos ei painettu
-        lukitseNappi4.style.backgroundImage = "url('hedelmapeli/pelikuvat/hold3.png')";
+        lukitseNappi4.style.filter = "brightness(100%)";
         onLukittu4 = false;
         lukitukset = 0;
    
@@ -862,16 +862,16 @@ function vapautaPanos(){
 
 async function lukotAuki(){
 
-    lukitseNappi1.style.backgroundImage = "url('hedelmapeli/pelikuvat/hold3.png')";
+    lukitseNappi1.style.filter = "brightness(100%)";
     onLukittu1 = false;
 
-    lukitseNappi2.style.backgroundImage = "url('hedelmapeli/pelikuvat/hold3.png')";
+    lukitseNappi2.style.filter = "brightness(100%)";
     onLukittu2 = false;
 
-    lukitseNappi3.style.backgroundImage = "url('hedelmapeli/pelikuvat/hold3.png')";
+    lukitseNappi3.style.filter = "brightness(100%)";
     onLukittu3 = false;
 
-    lukitseNappi4.style.backgroundImage = "url('hedelmapeli/pelikuvat/hold3.png')";
+    lukitseNappi4.style.filter = "brightness(100%)";
     onLukittu4 = false;
 }
 
