@@ -88,8 +88,33 @@
   
 }
 
-
 .scrollable-content1 {
+    display: flex;
+    padding: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+    align-items: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.404);
+    padding-left: 50px;
+}
+
+.home-link {
+    position: absolute;
+    left:-10px;
+    z-index: 2;
+    background: azure;
+    margin-left: 40px;
+    padding-right: 10px;
+    width: 50px;
+    
+}
+
+.scrollable-content1 a {
+    flex-shrink: 0;
+    margin: 0 10px;
+}
+
+.scrollable-content3 {
     padding: 10px;
     overflow-x: auto;
     white-space: nowrap;
@@ -109,6 +134,18 @@
 }
 
 .scrollable-content1 img {
+    width: 25px;
+    height: 25px;
+    border-radius: 3px;
+}
+.scrollable-content3 a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+    white-space: nowrap;
+}
+
+.scrollable-content3 img {
     width: 25px;
     height: 25px;
     border-radius: 3px;
