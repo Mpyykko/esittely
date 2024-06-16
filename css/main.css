@@ -167,6 +167,10 @@ body{
   z-index: 1000;
 }
 
+.table-bordered{
+  background-color: rgb(191, 190, 190);
+}
+
 
 footer{
 
