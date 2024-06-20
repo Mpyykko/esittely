@@ -225,12 +225,45 @@
                       <td id="q">npm install mongoose
                         <button class="copy-button" onclick="copyRow('q')">Kopioi</button>
                       </td>
-                      
-                     
                     </tr>
-                  
-                   
-                    
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="container">
+                <h2>Testaus</h2>
+                <table id="copyTable" class="table table-bordered" style="color: white;">
+                
+                  <tbody>
+                    <tr>
+                      <td>Scriptiin lisäys</td>
+                      <td id="t1"> "test": "node --test"
+                        <button class="copy-button" onclick="copyRow('t1')">Kopioi</button>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>Cross-env kirjaston asennus</td>
+                      <td id="t2">npm install --save-dev cross-env
+                        <button class="copy-button" onclick="copyRow('t2')">Kopioi</button>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>Scripteihin</td>
+                      <td id="t3">"start": "cross-env NODE_ENV=production node index.js",
+                        "dev": "cross-env NODE_ENV=development nodemon index.js",
+                        "test": "cross-env  NODE_ENV=test node --test",
+                        <button class="copy-button" onclick="copyRow('t3')">Kopioi</button>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>Supertest</td>
+                      <td id="t4">npm install --save-dev supertest
+                        <button class="copy-button" onclick="copyRow('t4')">Kopioi</button>
+                      </td>
+                    </tr>
                   </tbody>
                 </table>
               </div>
