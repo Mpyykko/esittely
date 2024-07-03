@@ -13,7 +13,37 @@
 </head>
 
 <body>
-    <nav id="topnav" class="navbar navbar-expand-lg bg-light justify-content-center">
+  <nav id="navi">
+    <a id="logo" class="logo" href="index.html"> <img  src="images/m3.png" alt="Esittelysivu kuva">Esittelysivu</a>
+    <div class="menu">
+        <a id="mina" href="mina.html">Minä</a>
+        <a id="tyo" href="tyo.html">Työkokemus</a>
+        <a id="harrastukset" href="hobbies.html">Harrastukset</a>
+        <div class="dropdown">
+            <a class="nav-link dropdown-toggle" href="#">Opinnot</a>
+            <div class="dropdown-content">
+                <a class="dropdown-item" href="tyhja.html">Yleistä</a>
+                <a class="dropdown-item" href="projektit.html">Projektit</a>
+                <a class="dropdown-item" href="fso.html">Fullstack Open</a>
+            </div>
+          </div>
+            <div class="dropdown">
+              <a class="nav-link dropdown-toggle" href="#">Some</a>
+              <div class="dropdown-content">
+                <li><a id="github" class="dropdown-item2" href="https://github.com/Mpyykko" target="_blank"> <img src="images/gi.png" alt="github"> Github</a></li>
+                <li><a id="facebook" class="dropdown-item2" href="https://facebook.com" target="_blank"><img src="images/face.png" alt="facebook"> Facebook</a></li>
+                <li><a id="youtube" class="dropdown-item2" href="https://youtube.com" target="_blank"> <img src="images/you.png" alt="youtube">Youtube</a></li>
+                <li><a id="linkedin" class="dropdown-item2" href="https://linkedin.com" target="_blank"> <img src="images/linked.png" alt="linked">LinkedIn</a></li>
+              </div>
+          </div>
+        
+    </div>
+</nav>
+
+
+
+
+    <nav id="topnav" class="navbar navbar-expand-lg bg-light justify-content-center d-lg-none">
         <div class="container-fluid">
           <a id="logo" class="navbar-brand" href="index.html"> <img  src="images/m3.png" alt="Esittelysivu kuva">Esittelysivu</a>
           <button id="navbar-toggler"  class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,7 +100,7 @@
       
 
     <div class="mobilenav">
-      <button id="mobilenav_button" class="mobilenav_button"> <img src="images/burgerwhite.png" alt="navi">Menu</button>
+      <button id="mobilenav_button" class="mobilenav_button"> <img src="images/burgerwhite.png" alt="navi"></button>
       <div class="mobilenav_content">
        
         <div class="scrollable-content1">
@@ -121,7 +151,7 @@
         </div>
 
         <div class="scrollable-content3">
-          <button id="mobile-close" class="mobile-close"> <img src="images/burgerwhite.png" alt="navi"> Close </button>
+          <button id="mobile-close" class="mobile-close"> <img src="images/burgerwhite.png" alt="navi"></button>
         </div>
 
 
