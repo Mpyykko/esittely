@@ -12,45 +12,44 @@
     position: fixed;
     bottom: 10px;
     left: 50%;
-    height: 50px;
-    width: 50px;
+    height: 20px;
+    width: 100px;
     transform: translateX(-50%);
-    border: 2px solid rgb(63, 63, 63);
-    border-radius: 50%;
-    background-color: rgb(23, 23, 23);
+    border: 1px solid rgb(44, 44, 44);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0);
     color: white;
     display: flex;
     align-items: center;
-    text-align: center;
-    box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.521);
+    justify-content: center;
+    box-shadow: 0 0 1px 1px rgba(56, 56, 56, 0.521);
 
 }
 
-.mobilenav_button img {
-    max-width: 70%;
-    max-height: 70%;
-    margin: 0 auto;
+.mobilenav_button::after, .mobile-close::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    right: 25%;
+    height: 1px;
+    background-color: rgb(97, 97, 97);
+    transform: translateY(-50%);
 }
+
 
 .mobile-close {
-    height: 50px;
-    width: 50px;
-    border: 2px solid rgb(63, 63, 63);
-    border-radius: 50%;
-    background-color: rgb(23, 23, 23);
+    height: 20px;
+    width: 100px;
+    border: 1px solid rgb(44, 44, 44);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0);
     color: white;
     display: flex;
     align-items: center;
     text-align: center;
     box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.521);
   
-}
-
-.mobile-close img {
-    width: 70%;
-    max-height: 30%;
-    margin: 0 auto;
-
 }
 
 
