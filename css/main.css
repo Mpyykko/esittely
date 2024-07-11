@@ -10,8 +10,11 @@ body{
 
 }
 
+
+
+
 #logo img{
-  width: 80px;
+  width: 50px;
 }
 
 #navi {
@@ -23,8 +26,6 @@ body{
   padding: 50px 150px 100px 50px;
 }
 
-
-
 .menu {
   display: flex;
   gap: 20px;
@@ -34,7 +35,7 @@ body{
   color: white;
   font-size: 18px;
 }
-.menu a:hover{
+.menu a:hover, .logo:hover{
   color: rgb(152, 152, 152);
 }
 
@@ -131,23 +132,25 @@ body{
 }
 
 
+#omaesittely {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
 
-
-
-#nakyma{
+.nakyma{
+  flex: 1;
   justify-content:center;
   align-items: center;
  
-
-  
 }
 
-#nakyma img{
-  width: 800px;
+.nakyma img{
+  width: 600px;
   max-width: 100%;
-  -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 50%);
-  mask-image: radial-gradient(circle, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 50%);
+  -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 10%);
+  mask-image: radial-gradient(circle, rgba(0,0,0,1) 5%, rgba(0,0,0,0) 60%);
 }
 
 #esittelyteksti {
@@ -166,15 +169,7 @@ body{
   
 }
 
-#omakuva {
-  width: 800px;
-  height: auto;
-  max-width: 80%;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
+
 
 #esittelyteksti{
   margin-top: 50px;
@@ -187,10 +182,6 @@ body{
   
 }
 
-
-#omakuva.visible {
-  opacity: 1;
-}
 
 .tekstit.visible {
   opacity: 1;
@@ -250,6 +241,9 @@ footer{
 @media (max-width:990px){
   #navi {
     display:none;
+    flex-direction: row;
+  
+    
   }
 
 
@@ -263,25 +257,25 @@ footer{
     justify-content: center;
 }
 
-.carousel-item img{
-  max-width: 100%;
-  max-height: 400px;
- 
-}
+  .carousel-item img{
+    max-width: 100%;
+    max-height: 400px;
+  
+  }
 
-.peli-ikkuna iframe{
-  width: 80%;
-  height: 50vh;
-    
+  .peli-ikkuna iframe{
+    width: 80%;
+    height: 50vh;
+      
 
-}
+  }
 
-#omakuva {
-  width: 100%;
-  height: auto;
-  max-width: 100%;
- 
-}
+  .omakuva {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  
+  }
 
 
 
@@ -290,12 +284,12 @@ footer{
 @media (min-width:1001px){
 
 
-.peli-ikkuna iframe{
-  width: 500px;
-  height: 500px;
-    
+  .peli-ikkuna iframe{
+    width: 500px;
+    height: 500px;
+      
 
-}
+  }
 
 
 }

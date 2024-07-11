@@ -12,11 +12,11 @@
     position: fixed;
     bottom: 10px;
     left: 50%;
-    height: 20px;
-    width: 100px;
+    height: 30px;
+    width: 130px;
     transform: translateX(-50%);
     border: 1px solid rgb(44, 44, 44);
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: rgba(0, 0, 0);
     color: white;
     display: flex;
@@ -26,7 +26,7 @@
 
 }
 
-.mobilenav_button::after, .mobile-close::after {
+.mobilenav_button::after{
     content: '';
     position: absolute;
     top: 50%;
@@ -39,10 +39,11 @@
 
 
 .mobile-close {
-    height: 20px;
-    width: 100px;
+    position: relative;
+    height: 30px;
+    width: 130px;
     border: 1px solid rgb(44, 44, 44);
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: rgba(0, 0, 0);
     color: white;
     display: flex;
@@ -51,6 +52,20 @@
     box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.521);
   
 }
+
+.mobile-close::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    right: 25%;
+    height: 1px;
+    background-color: rgb(97, 97, 97);
+    transform: translateY(-50%);
+}
+
+
+
 
 
 .mobilenav_content {
