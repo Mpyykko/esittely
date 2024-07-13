@@ -161,6 +161,46 @@ function copyRow(id) {
     }, 2000);
   }
 
+  document.addEventListener("DOMContentLoaded", function() {
+    const lines = document.querySelectorAll('.tekstit p');
+    lines.forEach((line, index) => {
+      setTimeout(() => {
+        line.classList.add('visible');
+      }, index * 300);
+    });
+  });
+
+
+
+const valikkoContent = document.querySelector('.valikko-content');
+
+  function toggleValikko() {
+   
+    valikkoContent.classList.toggle('show');
+}
+
+document.querySelector('.valikko').addEventListener('mouseleave', function() {
+    
+    if (valikkoContent.classList.contains('show')) {
+        valikkoContent.classList.remove('show');
+    }
+});
+
+
+window.onclick = function(event) {
+  if (!event.target.matches('.valikko-toggle')) {
+    let valikot = document.querySelectorAll('.valikko-content');
+    valikot.forEach(function(valikko) {
+      if (valikko.classList.contains('show')) {
+        valikko.classList.remove('show');
+      }
+    });
+  }
+}
+
+
+  
+
 
 
 
