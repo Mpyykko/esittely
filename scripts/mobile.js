@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     });
 
+
      /*
 
     document.addEventListener('click', function(event) {
@@ -45,9 +46,10 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-
-
-   
-
 });
 
+
+function closeImage() {
+    const imageContainer = document.getElementById('largeImageContainer');
+    imageContainer.style.display = 'none';
+  }

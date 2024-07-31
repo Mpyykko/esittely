@@ -193,7 +193,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     height: 50%;
-    width: 140%;
+    width: 130%;
     z-index: 1000;
   
 }
@@ -223,6 +223,21 @@
   
   .large-image-container.active {
     display: block;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    padding: 0 8px;
+    border-radius: 50%;
   }
 
  
