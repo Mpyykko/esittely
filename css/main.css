@@ -24,11 +24,15 @@ body{
   padding: 10px 20px;
   background-color:rgb(16, 15, 15);
   padding: 50px 50px 10px 50px;
+  
 }
 
 .menu {
   display: flex;
-  gap: 20px;
+  gap: 40px;
+
+
+
 }
 .menu a, .logo {
   text-decoration: none;
@@ -165,8 +169,8 @@ body{
 
 .carousel {
   margin-top: 50px;
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: auto;
   margin: 0 auto;
   margin-bottom: 100px;
   align-items: center;
