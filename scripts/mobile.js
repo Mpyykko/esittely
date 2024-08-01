@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     button.addEventListener('click', function(event) {
         event.stopPropagation();
         content.classList.toggle('open');
+        
     });
 
     closeButton.addEventListener('click', function(event) {
@@ -13,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
         content.classList.remove('open');
 
     });
+
 
 
      /*
@@ -40,8 +42,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const dropdownMenu = document.querySelector('.navbar-collapse');
 
     mobilenavButton.addEventListener('click', function() {
-
-        
         dropdownMenu.classList.remove('show');
 });
 
