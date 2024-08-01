@@ -231,12 +231,12 @@
     right: 10px;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     border: none;
     z-index: 10;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     display: flex;
     align-items: center;
