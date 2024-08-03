@@ -205,10 +205,17 @@ body{
  
 }
 
-.nakyma img{
+.round-img{
   width: 600px;
   max-width: 100%;
   -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 10%);
+  mask-image: radial-gradient(circle, rgba(0,0,0,1) 5%, rgba(0,0,0,0) 60%);
+}
+
+.round-img2{
+  width: 800px;
+  max-width: 100%;
+  -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 20%);
   mask-image: radial-gradient(circle, rgba(0,0,0,1) 5%, rgba(0,0,0,0) 60%);
 }
 

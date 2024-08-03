@@ -1,3 +1,4 @@
+console.log('Hi guys :)')
 
 
 const paivamaaraElement = document.getElementById('paivamaara');
