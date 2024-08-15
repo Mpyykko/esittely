@@ -207,6 +207,7 @@ body{
   flex: 1;
   justify-content:center;
   align-items: center;
+  margin-bottom: 200px;
  
 }
 
@@ -249,12 +250,14 @@ body{
   transition: opacity 1.2s ease-in-out, transform 1.2s ease-in-out;
   max-width: 90%;
   margin: 0 auto;
+ 
 }
 
 .tekstit p.visible {
   font-size: medium;
   opacity: 1;
   transform: translateY(0);
+ 
 
 }
 
