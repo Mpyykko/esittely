@@ -195,6 +195,7 @@ body{
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding-bottom: 200px;
 }
 #omakuva{
   margin-top: 50px;
